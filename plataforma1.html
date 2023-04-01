@@ -16,7 +16,14 @@
     <title>ONG Ayuda a los demas!</title>
   </head>
   <body>
-    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">buscar</button>
+          </form>
+        </div>
+      </nav>
       
     <h1>ONG Ayuda a los demas!</h1>
     
@@ -61,6 +68,42 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">DONANTE</button>
+        <button class="btn btn-primary" type="button">NECESITADO</button>
+        <ul class="nav justify-content-center">
+            <li class="DONANTE">
+                <a class="button" href="#">donante</a>
+            </li>
+            <li class="nav-item">
+                <a class="button" href="#">NECESITADO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled link</a>
+            </li>
+        </ul>
+
+      </div>
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Bienvenido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>quieres recibir ,mensaje de nuevo producto</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Si me interesa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+      <menu>comida  </menu>
       
     <!-- Optional JavaScript; choose one of the two! -->
 
