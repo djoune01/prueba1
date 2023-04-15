@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de solicitud de empleo</title>
+  <link rel="stylesheet" href="work3.css">
+</head>
+<body>
+  <h1>Formulario de solicitud de empleo</h1>
+  <form>
+    <label for="rut">Rut:</label>
+    <input type="text" id="rut" name="rut" minlength="9" maxlength="10" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="20" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" minlength="3" maxlength="20" required>
+
+    <label for="segundoNombre">Segundo nombre:</label>
+    <input type="text" id="segundoNombre" name="segundoNombre" minlength="3" maxlength="20" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="18" max="35" required>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+      <option value="">Seleccionar</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" minlength="9" maxlength="12" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+    <button type="button" onclick="crearCarta()">Crear carta</button>
+  </form>
+
+  <div id="carta"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
