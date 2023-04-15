@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de empleo</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <h1>Solicitud de empleo</h1>
+    <form>
+        <div>
+            <label for="rut">RUT：</label>
+            <input type="text" id="rut" name="rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" placeholder="ingrese Ej:11111111-1" required>
+        </div>
+        <div>
+            <label for="firstname">Name：</label>
+            <input type="text" id="firstname" name="firstname" pattern="[A-Za-z ]{3,20}" placeholder="Ingrese Nombre:bravo" required>
+        </div>
+        <div>
+            <label for="lastname">Last name：</label>
+            <input type="text" id="lastname" name="lastname" pattern="[A-Za-z ]{3,20}" placeholder="Ingrese Nombre:" required>
+        </div>
+        <div>
+            <label for="middlename">First name：</label>
+            <input type="text" id="middlename" name="middlename" pattern="[A-Za-z ]{3,20}" placeholder="Ingrese Nombre:"  required>
+        </div>
+        <div>
+            <label for="age">Age：</label>
+            <input type="number" id="age" name="age" min="18" max="35" placeholder="Ingrese Edad:+18" required>
+        </div>
+        <div>
+            <label for="gender">Gender：</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Please select your gender.</option>
+                <option value="male">Man</option>
+                <option value="female">Woman</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="phone">Phone number：</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{9,12}" placeholder="Ingrese Phone number:931466369" required>
+        </div>
+        <div>
+            <label for="coverletter">Cover letter：</label>
+            <textarea id="coverletter" name="coverletter" rows="10" cols="50" placeholder="Type your cover letter here"></textarea>
+          </div>
+        <div>
+            <button type="button" id="create-letter-btn">Create letter</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
