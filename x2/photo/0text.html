@@ -7,8 +7,8 @@
   width: 300px;
   border: 1px solid #ccc;
   padding: 10px;
-  margin: 20px; /* 添加 margin 属性 */
-  border-radius: 10px; /* 添加 border-radius 属性 */
+  margin: 20px;
+  border-radius: 10px; 
 }
     body {
       background-color: lightblue;
@@ -70,13 +70,13 @@
     function getChuckNorrisJoke() {
       var apiUrl = 'https://api.chucknorris.io/jokes/random';
 
-      // 获取随机笑话
+      // obtener chistes al azar
       $.get(apiUrl, function(data) {
         var joke = data.value;
 
-        // 将笑话翻译为西班牙语
+        // traducir chistes al español
         translateText(joke, 'en', 'es', function(translatedJoke) {
-          // 将笑话显示在页面上
+          // mostrar el chiste en la página
           $('#joke').text(translatedJoke);
         });
       });
@@ -85,11 +85,11 @@
     function translateText(text, sourceLang, targetLang, callback) {
       var translationUrl = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=' + sourceLang + '&tl=' + targetLang + '&dt=t&q=' + encodeURIComponent(text);
 
-      // 使用 Google Translate API 进行翻译
+      // Traducir con la API de Google Translate
       $.get(translationUrl, function(data) {
         var translatedText = data[0][0][0];
 
-        // 调用回调函数并传递翻译后的文本
+        // Llame a la función de devolución de llamada y pase el texto traducido
         callback(translatedText);
       });
     }
