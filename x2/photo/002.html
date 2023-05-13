@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>网页标题</title>
-  <!-- 引入Bootstrap CSS -->
+  <title>ONGAD</title>
+  <!-- Importar Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
     .modal-content {
@@ -32,9 +32,9 @@
       margin: auto;
     }
     .logo {
-    height: 50px; /* 设置Logo的高度为栏目的高度 */
-    width: auto; /* 根据高度自动调整宽度 */
-    border: none; /* 移除边框 */
+    height: 50px; 
+    width: auto; 
+    border: none; 
   }
   </style>
 </head>
@@ -66,35 +66,35 @@
     </ul>
   </nav>
 
-  <!-- 登录模态框 -->
+  <!-- modo de inicio de sesión -->
   <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">登录窗口</h5>
+          <h5 class="modal-title" id="loginModalLabel">ventana de inicio de sesión</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <!-- 在这里添加登录表单或其他内容 -->
+          <!-- Agregue un formulario de inicio de sesión o algo aquí -->
           <form>
             <div class="form-group">
-              <label for="username">用户名</label>
-              <input type="text" class="form-control transparent-bg-input" id="username" placeholder="请输入用户名">
+              <label for="username">USUALIO</label>
+              <input type="text" class="form-control transparent-bg-input" id="username" placeholder="NOMBRE USUALIO">
             </div>
             <div class="form-group">
-              <label for="password">密码</label>
-              <input type="password" class="form-control transparent-bg-input" id="password" placeholder="请输入密码">
+              <label for="password">CLAVE</label>
+              <input type="password" class="form-control transparent-bg-input" id="password" placeholder="INGRESA CLAVE">
             </div>
-            <a href="00.html" class="btn btn-primary">登录</a>
+            <a href="00.html" class="btn btn-primary">ACCESO</a>
           </form>
         </div>
       </div>
     </div>
   </div>
   
-  <!-- 旋转木马轮播组件 -->
+  <!-- Componente de carrusel de carrusel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 43.33%; margin: 0 auto;">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -126,50 +126,51 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 70%;" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="registerModalLabel" style="color: white;">注册窗口</h5>
+          <h5 class="modal-title" id="registerModalLabel" style="color: white;">
+ventana de registro</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body" style="color: white;">
-          <!-- 在这里添加注册表单或其他内容 -->
+          <!-- Agregue un formulario de registro o algo aquí-->
           <form id="registerForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="name">名字</label>
-                <input type="text" class="form-control transparent-bg-input" id="name" placeholder="请输入名字">
+                <label for="name">NOMBRE</label>
+                <input type="text" class="form-control transparent-bg-input" id="name" placeholder="INGRESA NOMBRE">
               </div>
               <div class="form-group col-md-6">
                 <label for="id">ID</label>
-                <input type="text" class="form-control transparent-bg-input" id="id" placeholder="请输入ID">
+                <input type="text" class="form-control transparent-bg-input" id="id" placeholder="INGRESA ID">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="age">年龄</label>
-                <input type="number" class="form-control transparent-bg-input" id="age" placeholder="请输入年龄">
+                <label for="age">EDAD</label>
+                <input type="number" class="form-control transparent-bg-input" id="age" placeholder="INGRESA EDAD">
               </div>
               <div class="form-group col-md-6">
-                <label for="gender">性别</label>
+                <label for="gender">SEXO</label>
                 <select class="form-control" id="gender">
-                  <option value="male">男性</option>
-                  <option value="female">女性</option>
+                  <option value="male">HOMBRE</option>
+                  <option value="female">MUJER</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
-              <label for="address">居住地址</label>
-              <input type="text" class="form-control transparent-bg-input" id="address" placeholder="请输入居住地址">
+              <label for="address">DIRECCION</label>
+              <input type="text" class="form-control transparent-bg-input" id="address" placeholder="INGRESA DIRECCON">
             </div>
             <div class="form-group">
-              <label for="username">用户名</label>
-              <input type="text" class="form-control transparent-bg-input" id="username" placeholder="请输入用户名">
+              <label for="username">NOMBRE USUALIO</label>
+              <input type="text" class="form-control transparent-bg-input" id="username" placeholder="INGRESAS NOMBRE USUALIO">
             </div>
             <div class="form-group">
-              <label for="password">密码</label>
-              <input type="password" class="form-control transparent-bg-input" id="password" placeholder="请输入密码">
+              <label for="password">CLAVE</label>
+              <input type="password" class="form-control transparent-bg-input" id="password" placeholder="INGRESA CLAVE">
             </div>
-            <button type="submit" class="btn btn-primary">创建</button>
+            <button type="submit" class="btn btn-primary">Crear</button>
           </form>
         </div>
       </div>
@@ -177,35 +178,35 @@
   </div>
   
   
-    <!-- 注册成功模态框 -->
+    <!-- Cuadro modal de registro exitoso -->
     <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="successModalLabel">注册成功</h5>
+            <h5 class="modal-title" id="successModalLabel">registración exitosa</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>恭喜您成功注册！</p>
+            <p>Felicitaciones por su registro exitoso！</p>
           </div>
         </div>
       </div>
     </div>
   
      
-  <!-- 引入Bootstrap JavaScript -->
+  <!-- introducir Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-  <!-- 注册表单提交处理 -->
+  <!-- Procesamiento del envío del formulario de registro-->
   <script>
     document.getElementById('registerForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // 阻止表单提交的默认行为
+      event.preventDefault(); // Comportamiento predeterminado para evitar el envío de formularios
 
-      // 获取表单字段的值
+      // Obtener el valor de un campo de formulario
       var name = document.getElementById('name').value;
       var id = document.getElementById('id').value;
       var age = document.getElementById('age').value;
@@ -214,9 +215,9 @@
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
 
-      // 在这里可以进行后续的注册处理逻辑，比如将数据发送到服务器保存
+      // La lógica de procesamiento de registro posterior se puede realizar aquí, como enviar datos al servidor para su almacenamiento.
 
-      // 注册成功后显示注册成功的模态框
+      // Después de un registro exitoso, se muestra un cuadro modal que muestra un registro exitoso
       $('#registerModal').modal('hide');
       $('#successModal').modal('show');
     });
