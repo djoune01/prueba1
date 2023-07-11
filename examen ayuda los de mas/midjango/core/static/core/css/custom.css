@@ -1,0 +1,26 @@
+/* core/custom.css */
+
+/* 修改后台页面背景颜色 */
+body {
+    background-color: #f1f1f1;
+  }
+  
+  /* 修改导航栏背景颜色和字体颜色 */
+  .nav-bg {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* 自定义表格样式 */
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
